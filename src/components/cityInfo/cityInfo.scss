@@ -1,0 +1,24 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+  flex-grow: 2;
+  &__wrapper {
+    font-size: 2rem;
+    margin: auto;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: 800px) {
+      width: auto;
+    }
+  }
+  &__element {
+    &_img {
+      font-size: 10rem;
+    }
+  }
+}

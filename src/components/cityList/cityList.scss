@@ -1,0 +1,31 @@
+.city-list {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 600px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__element {
+    font-size: 1.5rem;
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid black;
+    transition: .6s;
+
+    &:hover {
+      box-shadow: 0 0 3px;
+      background-color: cadetblue;
+    }
+
+    &_active {
+      background-color: cadetblue;
+    }
+
+    @media screen and (max-width: 600px) {
+      margin: 4px;
+      padding: 5px 10px;
+    }
+  }
+}
