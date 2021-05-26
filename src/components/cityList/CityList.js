@@ -16,7 +16,7 @@ const CityList = () => {
   const citiesListView = citiesList.map((city) => (
     <li
       key={city}
-      className={`city-list__element ${currentCity === city ? "city-list__element_active" : null}`}
+      className={`city-list__element${currentCity === city ? " city-list__element_active" : ""}`}
       onClick={() => selectCity(city)}
     >
       {city}
